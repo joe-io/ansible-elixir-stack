@@ -5,7 +5,7 @@
 
 
 - name: "source asdf in bashrc"
-  lineinfile: dest="~/.bash_profile" create=yes line="source ~/.asdf/asdf.sh"
+  lineinfile: dest="~/.bash_profile" create=yes line=". ~/.asdf/asdf.sh"
   remote_user: "{{deployer}}"
 
 
